@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>spring-data-jpa-mysample</artifactId>
+
+    <parent>
+        <groupId>org.springframework.data.jpa.examples</groupId>
+        <artifactId>spring-data-jpa-examples-parent</artifactId>
+        <version>1.1.0.RELEASE</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <name>Spring Data JPA - My sample project</name>
+    <description>Small sample project showing the usage of Sprign Data JPA.</description>
+
+    <properties>
+        <springframework.version>4.1.3.RELEASE</springframework.version>
+        <log4j.version>2.1</log4j.version>
+        <guava.version>16.0.1</guava.version>
+        <commons-lang3.version>3.3.2</commons-lang3.version>
+        <commons.collections.version>3.2.1</commons.collections.version>
+        <junit.verion>4.11</junit.verion>
+        <mockito.verion>1.10.19</mockito.verion>
+        <jackson.verion>2.4.4</jackson.verion>
+        <mysql.connector.version>5.1.23</mysql.connector.version>
+        <hibernate.version>4.3.7.Final</hibernate.version>
+        <hibernate.validation.version>5.1.0.Final</hibernate.validation.version>
+        <unitils.version>3.3</unitils.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <springdata.jpa.version>1.7.1.RELEASE</springdata.jpa.version>
+        <httpcomponents.version>4.3.2</httpcomponents.version>
+        <jedis.version>2.5.2</jedis.version>
+        <fastjson.version>1.2.2</fastjson.version>
+        <servlet.version>3.1.0</servlet.version>
+        <aspectj.version>1.8.4</aspectj.version>
+        <commons.pool2.version>2.2</commons.pool2.version>
+        <commons.dbcp2.version>2.1</commons.dbcp2.version>
+    </properties>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+
+        <!-- MySQL JDBC connector -->
+        <!-- If you want to use MySQL, uncomment this dependency declation. -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>${commons.dbcp2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>${commons.pool2.version}</version>
+        </dependency>
+        <!-- 常用工具 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${commons.collections.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <!-- 日志输出 -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-web</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-jcl</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-1.2-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+    </dependencies>
+</project>
